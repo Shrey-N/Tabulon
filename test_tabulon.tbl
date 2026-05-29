@@ -1,0 +1,21 @@
+file "students.txt" {
+    write "ABC,12123,123213"
+    write "ABCDE,1234,12122112"
+}
+
+file "students.txt" {
+    append "XYZ,120,111"
+}
+
+file "students.txt" {
+    read all
+}
+
+file "output.csv" {
+    write_csv from "students.txt"
+}
+
+binary "data.dat" {
+    write "Nice"
+    read all
+}

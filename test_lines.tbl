@@ -1,0 +1,17 @@
+file "lines.txt" {
+    write "Line 1"
+    write "Line 2"
+    write "Line 3"
+}
+
+file "lines.txt" {
+    readline
+    readline
+    readlines
+}
+
+file "combined.txt" {
+    write "Initial content"
+    append "More content"
+    read all
+}
